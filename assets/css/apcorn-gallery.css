@@ -1,0 +1,53 @@
+.apcorn-gallery-preview {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apcorn-gallery-preview li {
+    position: relative;
+    display: inline-block;
+}
+
+.apcorn-gallery-preview img {
+    max-width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apcorn-gallery-preview .remove {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    padding: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.apcorn-gallery-widget {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.apcorn-gallery-widget a {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.apcorn-gallery-widget img.gallery-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.apcorn-gallery-widget img.gallery-img:hover {
+    transform: scale(1.05);
+}
